@@ -1,0 +1,9 @@
+import MyComponent from '../../../../slices/CallToAction';
+
+export default {
+  title: 'slices/CallToAction'
+}
+
+
+export const _Default = () => <MyComponent slice={{"variation":"default","name":"Default","slice_type":"call_to_action","items":[],"primary":{"title":[{"type":"heading2","text":"Enhance transparent architectures","spans":[]}],"body":[{"type":"paragraph","text":"Deserunt in elit reprehenderit sit id sunt irure veniam. Consequat excepteur occaecat ea dolore elit excepteur esse officia cillum duis sit exercitation fugiat laboris. Culpa eu veniam qui laboris culpa.","spans":[]}],"buttonText":"mesh user-centric e-commerce","backgroundImage":{"dimensions":{"width":900,"height":500},"alt":"Placeholder image","copyright":null,"url":"https://images.unsplash.com/photo-1551739440-5dd934d3a94a?w=900&h=500&fit=crop"}},"id":"_Default"}} />
+_Default.storyName = 'Default'
