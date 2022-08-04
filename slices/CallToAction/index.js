@@ -16,6 +16,11 @@ import {
   FormControl,
   FormLabel,
 } from "@chakra-ui/react";
+<script
+  async
+  defer
+  src="https://static.cdn.prismic.io/prismic.js?new=true&repo=aztest"
+></script>;
 
 const CallToAction = ({ slice }) => (
   <section style={{ padding: "20px" }}>
