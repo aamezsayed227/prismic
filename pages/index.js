@@ -3,32 +3,8 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import * as prismic from "@prismicio/client";
 import { Flex } from "@chakra-ui/react";
-
-export async function getStaticProps(context) {
-  // Create a client
-  const client = prismic.createClient("aztest");
-
-  // Then query for your content
-  const blogPosts = await client.getAllByType("page");
-
-  // const client = Prismic.Client("https://aztest.cdn.prismic.io/api/v2", {});
-  console.log(blogPosts);
-  const data = blogPosts;
-  // const data = await client.query(
-  //   Prismic.Predicates.at("document.type", "page"),
-  //   { orderings: "[my.page.title desc]" }
-  // );
-  // console.log(data);
-
-  // const posts = data.results.map(convertPrismicToData);
-
-  return {
-    props: {
-      data,
-      // revalidate: ONE_DAY_IN_SECONDS,
-    },
-  };
-}
+import { SliceZone } from "@prismicio/react";
+import { components } from "../slices/";
 
 export default function Home({ data }) {
   return (
@@ -49,8 +25,37 @@ export default function Home({ data }) {
           />
           <div style={{ fontWeight: "bold" }}>{item.data.title[0].text}</div>
           <div>{item.data.body[0].text}</div>
+          <SliceZone slices={item.data.slices} components={components} />
         </div>
       ))}
     </div>
   );
+}
+
+
+
+export async function getStaticProps(context) {
+  // Create a client
+  const client = prismic.createClient("aztest");
+
+  // Then query for your content
+  const blogPosts = await client.getAllByType("page");
+
+  // const client = Prismic.Client("https://aztest.cdn.prismic.io/api/v2", {});
+  const data = blogPosts;
+  console.log("data=>", data[2].data);
+  // const data = await client.query(
+  //   Prismic.Predicates.at("document.type", "page"),
+  //   { orderings: "[my.page.title desc]" }
+  // );
+  // console.log(data);
+
+  // const posts = data.results.map(convertPrismicToData);
+
+  return {
+    props: {
+      data,
+      // revalidate: ONE_DAY_IN_SECONDS,
+    },
+  };
 }

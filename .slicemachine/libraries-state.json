@@ -97,6 +97,156 @@
           "extension": "js"
         },
         "screenshotPaths": {}
+      },
+      "image_card": {
+        "library": "slices",
+        "id": "image_card",
+        "name": "ImageCard",
+        "description": "ImageCard",
+        "model": {
+          "id": "image_card",
+          "type": "SharedSlice",
+          "name": "ImageCard",
+          "description": "ImageCard",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "ImageCard",
+              "primary": {
+                "blogImage": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Blog Image",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "image_card",
+            "items": [],
+            "primary": {
+              "blogImage": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=900&h=500&fit=crop"
+              }
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "C:\\Users\\Aamez Sayed\\Desktop\\nextjs\\aztest\\.slicemachine\\assets\\slices\\ImageCard\\default\\preview.png",
+            "width": 800,
+            "height": 48
+          }
+        }
+      },
+      "product": {
+        "library": "slices",
+        "id": "product",
+        "name": "Product",
+        "description": "Product",
+        "model": {
+          "id": "product",
+          "type": "SharedSlice",
+          "name": "Product",
+          "description": "Product",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Product",
+              "primary": {
+                "productName": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Product Name",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "publishedAt": {
+                  "type": "Timestamp",
+                  "config": {
+                    "label": "Published At",
+                    "placeholder": ""
+                  }
+                },
+                "productImage": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Product Image",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "product",
+            "items": [],
+            "primary": {
+              "productName": [
+                {
+                  "type": "paragraph",
+                  "text": "Laboris et est ea labore id mollit minim qui irure exercitation.",
+                  "spans": []
+                }
+              ],
+              "publishedAt": "2022-06-18T08:37:39.408Z",
+              "productImage": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab?w=900&h=500&fit=crop"
+              }
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "C:\\Users\\Aamez Sayed\\Desktop\\nextjs\\aztest\\.slicemachine\\assets\\slices\\Product\\default\\preview.png",
+            "width": 800,
+            "height": 48
+          }
+        }
       }
     }
   }

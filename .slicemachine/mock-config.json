@@ -21,6 +21,27 @@
           }
         }
       }
+    },
+    "ImageCard": {
+      "default": {
+        "primary": {
+          "blogImage": {
+            "content": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05"
+          }
+        }
+      }
+    },
+    "Product": {
+      "default": {
+        "primary": {
+          "productName": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
     }
   }
 }
